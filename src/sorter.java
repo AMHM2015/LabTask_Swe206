@@ -30,6 +30,7 @@ public class sorter {
             arr[i] = smallerNumber;  
         }  
     }
+
     public static void  insertionSort(int[] arr){
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -43,5 +44,8 @@ public class sorter {
             }
             arr[j + 1] = key;
         }
-    }  
+    } 
+    public void sort(int[] arr){
+        insertionSort(arr);
+    } 
 }
